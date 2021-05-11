@@ -18,7 +18,7 @@ class Controlador:
         return len(self.listaFacturas)
 
     def addFactura(self,factura):
-        if factura.getIdFactura not in self.listaFacturas:
+        if factura.getIdFactura() not in self.listaFacturas:
             self.listaFacturas[factura.getIdFactura()]=factura
             return True
 
@@ -43,7 +43,7 @@ class Controlador:
 
 
 
-    def mostrarFacturas(self,estaPagada,opcion,dni):
+    def mostrarFacturas(self,estaPagada,opcion,dni=""):
         lista=[]
         for clave,valor in self.listaFacturas.items():
             if valor.getPagada()==estaPagada:

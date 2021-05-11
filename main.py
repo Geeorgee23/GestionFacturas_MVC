@@ -109,17 +109,12 @@ while True:
             print()
             
         if op==3:
-            for i in controlador.mostrarFacturas(False,3,"0"):
+            for i in controlador.mostrarFacturas(False,3):
                 print(i)
             print()
         continue
-
-
-
-
-
-    
-
+):
+        lista=[]
     if op==3:
         print()
         print("*****Facturas Pagadas*****")
@@ -153,7 +148,7 @@ while True:
             print()
 
         if op==3:
-            for i in controlador.mostrarFacturas(True,3,0):
+            for i in controlador.mostrarFacturas(True,3):
                 print(i)
             print()
 
