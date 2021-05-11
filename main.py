@@ -113,8 +113,8 @@ while True:
                 print(i)
             print()
         continue
-):
-        lista=[]
+
+
     if op==3:
         print()
         print("*****Facturas Pagadas*****")
